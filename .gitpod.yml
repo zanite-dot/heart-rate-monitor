@@ -1,0 +1,15 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Install Flutter dependencies
+    init: |
+      flutter precache
+      flutter doctor
+    command: |
+      echo "Flutter environment is ready!"
+
+vscode:
+  extensions:
+    - Dart-Code.flutter
+    - Dart-Code.dart-code
